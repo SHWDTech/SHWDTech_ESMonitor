@@ -2,7 +2,7 @@
 
 namespace EsMonitor.Model.Interface
 {
-    public interface IFirmware : ISystemModel
+    public interface IFirmware : ISystemEsModel
     {
         /// <summary>
         /// 固件名称

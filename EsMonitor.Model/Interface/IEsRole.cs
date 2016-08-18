@@ -7,7 +7,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 用户角色接口
     /// </summary>
-    public interface IEsRole : ISystemDomainModel
+    public interface IEsRole : ISystemEsDomainModel
     {
         /// <summary>
         /// 角色所属父角色Guid

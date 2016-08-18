@@ -5,7 +5,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 协议包接口
     /// </summary>
-    public interface IProtocolData : IDataModel
+    public interface IProtocolDataEs : IDataEsModel
     {
         /// <summary>
         /// 协议所属设备Guid

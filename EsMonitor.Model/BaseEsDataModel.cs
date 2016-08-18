@@ -9,7 +9,7 @@ namespace EsMonitor.Model
     /// 数据模型基类
     /// </summary>
     [Serializable]
-    public class BaseDataModel : BaseModel, IDataModel
+    public class BaseEsDataModel : BaseEsModel, IDataEsModel
     {
         [Required]
         [Display(Name = "所属域ID")]

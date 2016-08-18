@@ -6,7 +6,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 协议指令接口
     /// </summary>
-    public interface ICommandData : ISystemModel
+    public interface ICommandData : ISystemEsModel
     {
         /// <summary>
         /// 数据索引值

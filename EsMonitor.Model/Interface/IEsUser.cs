@@ -8,7 +8,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 用户模型接口
     /// </summary>
-    public interface IEsUser : ISystemDomainModel, IPrincipal
+    public interface IEsUser : ISystemEsDomainModel, IPrincipal
     {
         /// <summary>
         /// 用户名

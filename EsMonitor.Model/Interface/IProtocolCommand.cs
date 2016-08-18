@@ -7,7 +7,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 协议指令模型接口
     /// </summary>
-    public interface IProtocolCommand : ISystemModel
+    public interface IProtocolCommand : ISystemEsModel
     {
         /// <summary>
         /// 指令类型

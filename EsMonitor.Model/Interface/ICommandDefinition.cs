@@ -5,7 +5,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 协议指令定义接口
     /// </summary>
-    public interface ICommandDefinition : ISystemModel
+    public interface ICommandDefinition : ISystemEsModel
     {
         /// <summary>
         /// 所属协议指令Guid

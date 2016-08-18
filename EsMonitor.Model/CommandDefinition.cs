@@ -9,7 +9,7 @@ namespace EsMonitor.Model
     /// 指令定义
     /// </summary>
     [Serializable]
-    public class CommandDefinition : BaseSystemModel, ICommandDefinition
+    public class CommandDefinition : BaseEsSystemModel, ICommandDefinition
     {
         [Required]
         [Display(Name = "所属指令")]

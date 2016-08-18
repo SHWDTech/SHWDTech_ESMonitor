@@ -3,17 +3,17 @@
 namespace EsMonitor.Model.Interface
 {
     /// <summary>
-    /// 带有域信息得系统模型类接口
+    /// 数据模型基类接口
     /// </summary>
-    public interface ISystemDomainModel : ISystemModel
+    public interface IDataEsModel : IEsModel
     {
         /// <summary>
-        /// 所属域Guid
+        /// 数据所属域Guid
         /// </summary>
         Guid DomainGuid { get; set; }
 
         /// <summary>
-        /// 所属域
+        /// 数据所属域
         /// </summary>
         Domain Domain { get; set; }
     }

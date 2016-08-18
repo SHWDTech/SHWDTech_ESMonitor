@@ -5,7 +5,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 用户配置模型接口
     /// </summary>
-    public interface IUserConfig : ISystemDomainModel
+    public interface IUserConfig : ISystemEsDomainModel
     {
         /// <summary>
         /// 用户配置名称

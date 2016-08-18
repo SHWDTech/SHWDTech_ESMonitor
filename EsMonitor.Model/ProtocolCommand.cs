@@ -11,7 +11,7 @@ namespace EsMonitor.Model
     /// 协议指令模型
     /// </summary>
     [Serializable]
-    public class ProtocolCommand : BaseSystemModel, IProtocolCommand
+    public class ProtocolCommand : BaseEsSystemModel, IProtocolCommand
     {
         [Display(Name = "指令类型编码")]
         public virtual byte[] CommandTypeCode { get; set; }

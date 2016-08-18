@@ -8,7 +8,7 @@ namespace EsMonitor.Model
     /// 部门模型
     /// </summary>
     [Serializable]
-    public class Department : BaseSystemDoaminModel, IDepartment
+    public class Department : BaseEsSystemDoaminModel, IDepartment
     {
         [Required]
         [MaxLength(50)]

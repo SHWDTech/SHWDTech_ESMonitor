@@ -6,7 +6,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 报警信息接口
     /// </summary>
-    public interface IAlarm : IDataModel
+    public interface IAlarm : IDataEsModel
     {
         /// <summary>
         /// 所属设备ID

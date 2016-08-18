@@ -13,7 +13,7 @@ namespace EsMonitor.Model
     /// 用户
     /// </summary>
     [Serializable]
-    public class EsUser : BaseSystemDoaminModel, IEsUser
+    public class EsUser : BaseEsSystemDoaminModel, IEsUser
     {
         [Display(Name = "用户名")]
         [MaxLength(25)]

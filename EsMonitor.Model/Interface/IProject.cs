@@ -5,7 +5,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 项目接口
     /// </summary>
-    public interface IProject : ISystemDomainModel
+    public interface IProject : ISystemEsDomainModel
     {
         /// <summary>
         /// 监测点编号
@@ -76,7 +76,7 @@ namespace EsMonitor.Model.Interface
         /// <summary>
         /// 项目所属区域
         /// </summary>
-        SystemDictionary District { get; set; }
+        EsSystemDictionary District { get; set; }
 
         /// <summary>
         /// 项目占地面积
@@ -101,7 +101,7 @@ namespace EsMonitor.Model.Interface
         /// <summary>
         /// 项目所属阶段
         /// </summary>
-        SystemDictionary ProjectStage { get; set; }
+        EsSystemDictionary ProjectStage { get; set; }
 
         /// <summary>
         /// 项目类型Guid
@@ -111,7 +111,7 @@ namespace EsMonitor.Model.Interface
         /// <summary>
         /// 项目类型
         /// </summary>
-        SystemDictionary Type { get; set; }
+        EsSystemDictionary Type { get; set; }
 
         /// <summary>
         /// 项目报警类型Guid
@@ -121,7 +121,7 @@ namespace EsMonitor.Model.Interface
         /// <summary>
         /// 项目报警类型
         /// </summary>
-        SystemDictionary AlarmType { get; set; }
+        EsSystemDictionary AlarmType { get; set; }
 
         /// <summary>
         /// 备注

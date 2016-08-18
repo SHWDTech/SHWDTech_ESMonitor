@@ -10,7 +10,7 @@ namespace EsMonitor.Model
     /// 权限
     /// </summary>
     [Serializable]
-    public class Permission : BaseSystemDoaminModel, IPermission
+    public class Permission : BaseEsSystemDoaminModel, IPermission
     {
         [Required]
         [Display(Name = "权限名称")]

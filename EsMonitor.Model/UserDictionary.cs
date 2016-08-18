@@ -9,7 +9,7 @@ namespace EsMonitor.Model
     /// 用户自定义字典
     /// </summary>
     [Serializable]
-    public class UserDictionary : BaseSystemDoaminModel, IUserDictionary
+    public class UserDictionary : BaseEsSystemDoaminModel, IUserDictionary
     {
         [Required]
         [Display(Name = "字典名称")]

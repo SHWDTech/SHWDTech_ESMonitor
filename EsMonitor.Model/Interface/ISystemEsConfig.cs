@@ -5,7 +5,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 系统配置接口
     /// </summary>
-    public interface ISystemConfig : ISystemModel
+    public interface ISystemEsConfig : ISystemEsModel
     {
         /// <summary>
         /// 系统设置名称
@@ -30,6 +30,6 @@ namespace EsMonitor.Model.Interface
         /// <summary>
         /// 父级系统设置项
         /// </summary>
-        SystemConfig ParentSystemConfig { get; set; }
+        EsSystemConfig ParentEsSystemConfig { get; set; }
     }
 }

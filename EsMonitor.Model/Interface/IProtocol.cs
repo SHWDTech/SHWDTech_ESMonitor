@@ -6,7 +6,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 协议接口
     /// </summary>
-    public interface IProtocol : ISystemModel
+    public interface IProtocol : ISystemEsModel
     {
         /// <summary>
         /// 协议应用领域Guid
@@ -16,7 +16,7 @@ namespace EsMonitor.Model.Interface
         /// <summary>
         /// 协议应用领域
         /// </summary>
-        SystemDictionary Field { get; set; }
+        EsSystemDictionary Field { get; set; }
 
         /// <summary>
         /// 协议应用子领域Guid
@@ -26,7 +26,7 @@ namespace EsMonitor.Model.Interface
         /// <summary>
         /// 协议应用子领域
         /// </summary>
-        SystemDictionary SubField { get; set; }
+        EsSystemDictionary SubField { get; set; }
 
         /// <summary>
         /// 协议名称

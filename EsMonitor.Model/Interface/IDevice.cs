@@ -6,7 +6,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 设备信息接口
     /// </summary>
-    public interface IDevice : ISystemDomainModel
+    public interface IDevice : ISystemEsDomainModel
     {
         /// <summary>
         /// 设备类型Guid

@@ -5,7 +5,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 系统模型接口
     /// </summary>
-    public interface ISystemModel : IModel
+    public interface ISystemEsModel : IEsModel
     {
         /// <summary>
         /// 字段创建时间

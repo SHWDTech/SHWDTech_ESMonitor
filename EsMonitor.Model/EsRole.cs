@@ -11,7 +11,7 @@ namespace EsMonitor.Model
     /// 角色
     /// </summary>
     [Serializable]
-    public class EsRole : BaseSystemDoaminModel, IEsRole
+    public class EsRole : BaseEsSystemDoaminModel, IEsRole
     {
         [Display(Name = "父级角色ID")]
         public virtual Guid? ParentRoleGuid { get; set; }

@@ -9,7 +9,7 @@ namespace EsMonitor.Model
     /// 协议接口模型类
     /// </summary>
     [Serializable]
-    public class ProtocolStructure : BaseSystemModel, IProtocolStructure
+    public class ProtocolStructure : BaseEsSystemModel, IProtocolStructure
     {
         [Required]
         [Display(Name = "所属协议")]

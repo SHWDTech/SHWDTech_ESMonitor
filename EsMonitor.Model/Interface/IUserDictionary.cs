@@ -5,7 +5,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 用户自定义字典模型接口
     /// </summary>
-    public interface IUserDictionary : ISystemDomainModel
+    public interface IUserDictionary : ISystemEsDomainModel
     {
         /// <summary>
         /// 字典名称

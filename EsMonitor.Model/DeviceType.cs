@@ -9,7 +9,7 @@ namespace EsMonitor.Model
     /// 设备类型类型
     /// </summary>
     [Serializable]
-    public class DeviceType : BaseSystemModel, IDeviceType
+    public class DeviceType : BaseEsSystemModel, IDeviceType
     {
         [Required]
         [Display(Name = "设备类型应用领域")]
@@ -17,7 +17,7 @@ namespace EsMonitor.Model
 
         [Display(Name = "设备类型应用领域")]
         [ForeignKey("FieldId")]
-        public virtual SystemDictionary Field { get; set; }
+        public virtual EsSystemDictionary Field { get; set; }
 
         [Required]
         [Display(Name = "设备类型应用子领域")]
@@ -25,7 +25,7 @@ namespace EsMonitor.Model
 
         [ForeignKey("SubFieldId")]
         [Display(Name = "设备类型应用子领域")]
-        public virtual SystemDictionary SubField { get; set; }
+        public virtual EsSystemDictionary SubField { get; set; }
 
         [Display(Name = "设备类型自定义字段")]
         public virtual string CustomerInfo { get; set; }

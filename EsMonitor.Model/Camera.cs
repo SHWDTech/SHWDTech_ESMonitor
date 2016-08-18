@@ -10,7 +10,7 @@ namespace EsMonitor.Model
     /// 摄像头
     /// </summary>
     [Serializable]
-    public class Camera : BaseSystemDoaminModel, ICamera
+    public class Camera : BaseEsSystemDoaminModel, ICamera
     {
         [Display(Name = "摄像头外部ID")]
         [MaxLength(50)]
@@ -36,7 +36,7 @@ namespace EsMonitor.Model
 
         [Display(Name = "摄像头登录类型")]
         [ForeignKey("AccessTypeGuid")]
-        public virtual SystemDictionary AccessType { get; set; }
+        public virtual EsSystemDictionary AccessType { get; set; }
 
         [Display(Name = "摄像头所属公司")]
         [MaxLength(50)]

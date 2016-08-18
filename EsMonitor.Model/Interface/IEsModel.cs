@@ -1,9 +1,10 @@
 ﻿using System;
 using EsMonitor.Model.ModelEnums;
+using SHWDTech.RepositoryModel;
 
 namespace EsMonitor.Model.Interface
 {
-    public interface IModel
+    public interface IEsModel : IRepositoryModelBase
     {
         /// <summary>
         /// 数据唯一标识符

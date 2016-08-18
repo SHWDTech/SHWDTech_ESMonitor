@@ -9,7 +9,7 @@ namespace EsMonitor.Model
     /// 协议数据
     /// </summary>
     [Serializable]
-    public class ProtocolData : BaseDataModel, IProtocolData
+    public class ProtocolEsData : BaseEsDataModel, IProtocolDataEs
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

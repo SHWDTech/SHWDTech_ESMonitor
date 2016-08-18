@@ -5,7 +5,7 @@ using EsMonitor.Model.Interface;
 
 namespace EsMonitor.Model
 {
-    public class Project : BaseSystemDoaminModel, IProject
+    public class Project : BaseEsSystemDoaminModel, IProject
     {
         [Display(Name = "负责人")]
         [MaxLength(200)]
@@ -68,7 +68,7 @@ namespace EsMonitor.Model
 
         [Display(Name = "项目所属区域")]
         [ForeignKey("DistrictGuid")]
-        public virtual SystemDictionary District { get; set; }
+        public virtual EsSystemDictionary District { get; set; }
 
         [Display(Name = "项目面积")]
         public virtual short Square { get; set; }
@@ -85,7 +85,7 @@ namespace EsMonitor.Model
 
         [Display(Name = "项目所属阶段")]
         [ForeignKey("ProjectStageGuid")]
-        public virtual SystemDictionary ProjectStage { get; set; }
+        public virtual EsSystemDictionary ProjectStage { get; set; }
 
         [Display(Name = "项目开始时间")]
         public virtual DateTime StartDate { get; set; }
@@ -95,14 +95,14 @@ namespace EsMonitor.Model
 
         [Display(Name = "项目类型")]
         [ForeignKey("TypeGuid")]
-        public virtual SystemDictionary Type { get; set; }
+        public virtual EsSystemDictionary Type { get; set; }
 
         [Display(Name = "项目报警类型ID")]
         public virtual Guid? AlarmTypeGuid { get; set; }
 
         [Display(Name = "项目报警类型")]
         [ForeignKey("AlarmTypeGuid")]
-        public virtual SystemDictionary AlarmType { get; set; }
+        public virtual EsSystemDictionary AlarmType { get; set; }
 
         [Display(Name = "备注")]
         [MaxLength(2000)]

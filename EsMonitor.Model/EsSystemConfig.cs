@@ -9,7 +9,7 @@ namespace EsMonitor.Model
     /// 系统配置
     /// </summary>
     [Serializable]
-    public class SystemConfig : BaseSystemModel, ISystemConfig
+    public class EsSystemConfig : BaseEsSystemModel, ISystemEsConfig
     {
         [Required]
         [Display(Name = "系统配置名称")]
@@ -31,6 +31,6 @@ namespace EsMonitor.Model
 
         [Display(Name = "所属系统配置")]
         [ForeignKey("ParentSystemConfigGuid")]
-        public virtual SystemConfig ParentSystemConfig { get; set; }
+        public virtual EsSystemConfig ParentEsSystemConfig { get; set; }
     }
 }

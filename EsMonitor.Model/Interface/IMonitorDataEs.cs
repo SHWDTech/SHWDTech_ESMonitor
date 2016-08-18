@@ -5,7 +5,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 监测数据模型接口
     /// </summary>
-    public interface IMonitorData : IDataModel
+    public interface IMonitorDataEs : IDataEsModel
     {
         /// <summary>
         /// 数据所属协议包Guid
@@ -15,7 +15,7 @@ namespace EsMonitor.Model.Interface
         /// <summary>
         /// 数据所属协议包
         /// </summary>
-        ProtocolData ProtocolData { get; set; }
+        ProtocolEsData ProtocolEsData { get; set; }
 
         /// <summary>
         /// 数据类型Guid

@@ -11,7 +11,7 @@ namespace EsMonitor.Model
     /// 指令数据
     /// </summary>
     [Serializable]
-    public class CommandData : BaseSystemModel, ICommandData
+    public class CommandData : BaseEsSystemModel, ICommandData
     {
         [Required]
         [Display(Name = "数据索引值")]

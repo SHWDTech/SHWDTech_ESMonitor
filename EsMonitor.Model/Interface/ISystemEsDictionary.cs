@@ -5,7 +5,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 系统自定义字典接口
     /// </summary>
-    public interface ISystemDictionary : ISystemModel
+    public interface ISystemEsDictionary : ISystemEsModel
     {
         /// <summary>
         /// 字典名称
@@ -35,6 +35,6 @@ namespace EsMonitor.Model.Interface
         /// <summary>
         /// 父级字典项
         /// </summary>
-        SystemDictionary ParentDictionary { get; }
+        EsSystemDictionary ParentDictionary { get; }
     }
 }

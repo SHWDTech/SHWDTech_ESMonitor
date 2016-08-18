@@ -1,6 +1,6 @@
 ﻿namespace EsMonitor.Model.Interface
 {
-    public interface IDomain : ISystemModel
+    public interface IDomain : ISystemEsModel
     {
         /// <summary>
         /// 域名称

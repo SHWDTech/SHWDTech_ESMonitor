@@ -5,7 +5,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 设备类型接口
     /// </summary>
-    public interface IDeviceType : ISystemModel
+    public interface IDeviceType : ISystemEsModel
     {
         /// <summary>
         /// 设备应用领域Guid
@@ -15,7 +15,7 @@ namespace EsMonitor.Model.Interface
         /// <summary>
         /// 设备应用领域
         /// </summary>
-        SystemDictionary Field { get; set; }
+        EsSystemDictionary Field { get; set; }
 
         /// <summary>
         /// 设备应用子领域Guid
@@ -25,7 +25,7 @@ namespace EsMonitor.Model.Interface
         /// <summary>
         /// 设备应用子领域
         /// </summary>
-        SystemDictionary SubField { get; set; }
+        EsSystemDictionary SubField { get; set; }
 
         /// <summary>
         /// 自定义信息

@@ -5,7 +5,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 图片接口
     /// </summary>
-    public interface IPhoto : ISystemDomainModel
+    public interface IPhoto : ISystemEsDomainModel
     {
         /// <summary>
         /// 照片所属设备Guid
@@ -35,6 +35,6 @@ namespace EsMonitor.Model.Interface
         /// <summary>
         /// 照片类型
         /// </summary>
-        SystemDictionary PhotoType { get; set; }
+        EsSystemDictionary PhotoType { get; set; }
     }
 }

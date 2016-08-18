@@ -6,7 +6,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 摄像头接口
     /// </summary>
-    public interface ICamera : ISystemDomainModel
+    public interface ICamera : ISystemEsDomainModel
     {
         /// <summary>
         /// 摄像头外部ID
@@ -41,7 +41,7 @@ namespace EsMonitor.Model.Interface
         /// <summary>
         /// 摄像头登录类型
         /// </summary>
-        SystemDictionary AccessType { get; set; }
+        EsSystemDictionary AccessType { get; set; }
 
         /// <summary>
         /// 摄像头所属公司

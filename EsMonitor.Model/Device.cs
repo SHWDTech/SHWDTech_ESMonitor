@@ -10,7 +10,7 @@ namespace EsMonitor.Model
     /// 设备
     /// </summary>
     [Serializable]
-    public class Device : BaseSystemDoaminModel, IDevice
+    public class Device : BaseEsSystemDoaminModel, IDevice
     {
         [Required]
         [Display(Name = "设备类型")]

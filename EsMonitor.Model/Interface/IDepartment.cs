@@ -3,7 +3,7 @@
     /// <summary>
     /// 部门模型接口
     /// </summary>
-    public interface IDepartment : ISystemDomainModel
+    public interface IDepartment : ISystemEsDomainModel
     {
         /// <summary>
         /// 部门名称

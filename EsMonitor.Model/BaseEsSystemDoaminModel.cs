@@ -9,7 +9,7 @@ namespace EsMonitor.Model
     /// 带有域信息得系统模型基类
     /// </summary>
     [Serializable]
-    public class BaseSystemDoaminModel : BaseSystemModel, ISystemDomainModel
+    public class BaseEsSystemDoaminModel : BaseEsSystemModel, ISystemEsDomainModel
     {
         [Required]
         [Display(Name = "所属域ID")]

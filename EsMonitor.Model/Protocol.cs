@@ -10,7 +10,7 @@ namespace EsMonitor.Model
     /// 协议
     /// </summary>
     [Serializable]
-    public class Protocol : BaseSystemModel, IProtocol
+    public class Protocol : BaseEsSystemModel, IProtocol
     {
         [Required]
         [Display(Name = "协议应用领域")]
@@ -18,7 +18,7 @@ namespace EsMonitor.Model
 
         [Display(Name = "协议应用领域")]
         [ForeignKey("FieldGuid")]
-        public virtual SystemDictionary Field { get; set; }
+        public virtual EsSystemDictionary Field { get; set; }
 
         [Required]
         [Display(Name = "协议应用子领域")]
@@ -26,7 +26,7 @@ namespace EsMonitor.Model
 
         [Display(Name = "协议应用子领域")]
         [ForeignKey("SubFieldGuid")]
-        public virtual SystemDictionary SubField { get; set; }
+        public virtual EsSystemDictionary SubField { get; set; }
 
         [Required]
         [Display(Name = "协议名称")]

@@ -4,7 +4,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 using EsMonitor.Model.Interface;
 using EsMonitor.Model.ModelEnums;
 using Newtonsoft.Json;
-using SHWDTech.RepositoryModel;
 
 namespace EsMonitor.Model
 {
@@ -12,7 +11,7 @@ namespace EsMonitor.Model
     /// 模型类基类
     /// </summary>
     [Serializable]
-    public class BaseModel : IRepositoryModelBase, IModel
+    public class BaseEsModel : IEsModel
     {
         [Key]
         [Display(Name = "唯一标识符")]

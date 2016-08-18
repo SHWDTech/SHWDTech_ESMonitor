@@ -6,7 +6,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 权限模型接口
     /// </summary>
-    public interface IPermission : ISystemDomainModel
+    public interface IPermission : ISystemEsDomainModel
     {
         /// <summary>
         /// 权限名称

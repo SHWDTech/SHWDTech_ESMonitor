@@ -9,7 +9,7 @@ namespace EsMonitor.Model
     /// 图片
     /// </summary>
     [Serializable]
-    public class Photo : BaseSystemDoaminModel, IPhoto
+    public class Photo : BaseEsSystemDoaminModel, IPhoto
     {
         [Required]
         [Display(Name = "照片所属设备")]
@@ -36,6 +36,6 @@ namespace EsMonitor.Model
 
         [Display(Name = "照片类型")]
         [ForeignKey("PhotoTypeGuid")]
-        public virtual SystemDictionary PhotoType { get; set; }
+        public virtual EsSystemDictionary PhotoType { get; set; }
     }
 }

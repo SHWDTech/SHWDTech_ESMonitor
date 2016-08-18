@@ -5,7 +5,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 模块模型接口
     /// </summary>
-    public interface IModule : ISystemDomainModel
+    public interface IModule : ISystemEsDomainModel
     {
         /// <summary>
         /// 父模块Guid

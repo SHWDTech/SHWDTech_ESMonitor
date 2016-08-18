@@ -9,7 +9,7 @@ namespace EsMonitor.Model
     /// 用户配置
     /// </summary>
     [Serializable]
-    public class UserConfig : BaseSystemDoaminModel, IUserConfig
+    public class UserConfig : BaseEsSystemDoaminModel, IUserConfig
     {
         [Display(Name = "用户配置名称")]
         [Required]

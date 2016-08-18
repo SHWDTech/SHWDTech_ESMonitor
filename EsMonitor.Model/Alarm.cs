@@ -10,7 +10,7 @@ namespace EsMonitor.Model
     /// 报警信息
     /// </summary>
     [Serializable]
-    public class Alarm : BaseDataModel, IAlarm
+    public class Alarm : BaseEsDataModel, IAlarm
     {
         [Required]
         [Display(Name = "报警信息来源设备")]

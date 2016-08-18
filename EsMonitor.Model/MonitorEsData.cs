@@ -9,7 +9,7 @@ namespace EsMonitor.Model
     /// 监测数据
     /// </summary>
     [Serializable]
-    public class MonitorData : BaseDataModel, IMonitorData
+    public class MonitorEsData : BaseEsDataModel, IMonitorDataEs
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -21,7 +21,7 @@ namespace EsMonitor.Model
 
         [Display(Name = "数据来源协议包")]
         [ForeignKey("ProtocolDataGuid")]
-        public virtual ProtocolData ProtocolData { get; set; }
+        public virtual ProtocolEsData ProtocolEsData { get; set; }
 
         [Required]
         [Display(Name = "数据类型ID")]
@@ -46,7 +46,7 @@ namespace EsMonitor.Model
         public virtual string DataName => CommandData.DataName;
 
         [NotMapped]
-        public virtual Device Device => ProtocolData.Device;
+        public virtual Device Device => ProtocolEsData.Device;
 
         [NotMapped]
         public virtual Guid DeviceId => Device.Guid;

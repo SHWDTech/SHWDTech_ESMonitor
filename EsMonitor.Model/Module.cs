@@ -9,7 +9,7 @@ namespace EsMonitor.Model
     /// 模块模型对象
     /// </summary>
     [Serializable]
-    public class Module : BaseSystemDoaminModel, IModule
+    public class Module : BaseEsSystemDoaminModel, IModule
     {
         [Display(Name = "所属父模块")]
         public virtual Guid? ParentModuleGuid { get; set; }

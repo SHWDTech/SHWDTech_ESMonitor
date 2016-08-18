@@ -9,7 +9,7 @@ namespace EsMonitor.Model
     /// 系统模型基类
     /// </summary>
     [Serializable]
-    public class BaseSystemModel : BaseModel, ISystemModel
+    public class BaseEsSystemModel : BaseEsModel, ISystemEsModel
     {
         [JsonIgnore]
         [DataType(DataType.DateTime)]

@@ -9,7 +9,7 @@ namespace EsMonitor.Model
     /// 固件
     /// </summary>
     [Serializable]
-    public class Firmware : BaseSystemModel, IFirmware
+    public class Firmware : BaseEsSystemModel, IFirmware
     {
         [Required]
         [Display(Name = "固件名称")]

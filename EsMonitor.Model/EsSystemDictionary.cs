@@ -9,7 +9,7 @@ namespace EsMonitor.Model
     /// 系统自定义字典
     /// </summary>
     [Serializable]
-    public class SystemDictionary : BaseSystemModel, ISystemDictionary
+    public class EsSystemDictionary : BaseEsSystemModel, ISystemEsDictionary
     {
         [Required]
         [Display(Name = "字典名称")]
@@ -31,6 +31,6 @@ namespace EsMonitor.Model
 
         [Display(Name = "父级字典项")]
         [ForeignKey("ParentDictionaryGuid")]
-        public virtual SystemDictionary ParentDictionary { get; set; }
+        public virtual EsSystemDictionary ParentDictionary { get; set; }
     }
 }

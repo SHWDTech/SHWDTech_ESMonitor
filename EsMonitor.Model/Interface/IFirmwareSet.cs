@@ -5,7 +5,7 @@ namespace EsMonitor.Model.Interface
     /// <summary>
     /// 固件集接口
     /// </summary>
-    public interface IFirmwareSet : ISystemModel
+    public interface IFirmwareSet : ISystemEsModel
     {
         /// <summary>
         /// 固件集名称

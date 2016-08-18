@@ -9,7 +9,7 @@ namespace EsMonitor.Model
     /// 域
     /// </summary>
     [Serializable]
-    public class Domain : BaseSystemModel, IDomain
+    public class Domain : BaseEsSystemModel, IDomain
     {
         [Required]
         [Display(Name = "域名称")]
