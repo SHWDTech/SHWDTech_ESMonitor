@@ -88,7 +88,7 @@
     <Compile Include="Interface\IProject.cs" />
     <Compile Include="Interface\IProtocol.cs" />
     <Compile Include="Interface\IProtocolCommand.cs" />
-    <Compile Include="Interface\IProtocolDataEs.cs" />
+    <Compile Include="Interface\IProtocolData.cs" />
     <Compile Include="Interface\IProtocolStructure.cs" />
     <Compile Include="Interface\ISystemEsConfig.cs" />
     <Compile Include="Interface\ISystemEsDictionary.cs" />
@@ -115,7 +115,7 @@
     <Compile Include="BaseEsSystemModel.cs" />
     <Compile Include="Protocol.cs" />
     <Compile Include="ProtocolCommand.cs" />
-    <Compile Include="ProtocolEsData.cs" />
+    <Compile Include="ProtocolData.cs" />
     <Compile Include="ProtocolStructure.cs" />
     <Compile Include="EsSystemConfig.cs" />
     <Compile Include="EsSystemDictionary.cs" />

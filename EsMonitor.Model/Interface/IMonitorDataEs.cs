@@ -15,7 +15,7 @@ namespace EsMonitor.Model.Interface
         /// <summary>
         /// 数据所属协议包
         /// </summary>
-        ProtocolEsData ProtocolEsData { get; set; }
+        ProtocolData ProtocolData { get; set; }
 
         /// <summary>
         /// 数据类型Guid

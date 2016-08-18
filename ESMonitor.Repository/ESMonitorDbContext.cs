@@ -126,7 +126,7 @@ namespace ESMonitor.Repository
         /// <summary>
         /// 协议数据包
         /// </summary>
-        public virtual DbSet<ProtocolEsData> ProtocolDatas { get; set; }
+        public virtual DbSet<ProtocolData> ProtocolDatas { get; set; }
 
         /// <summary>
         /// 系统角色
